@@ -1,0 +1,103 @@
+
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: jus;
+  height: 100vh;
+  background-image: url('../public/Background\ photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction:row;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+  text-align: justify;
+  transition: border-color 0.3s;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+  text-align: left;
+}
+.logo {
+
+  margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+
+}
+
+.logo img {
+  max-width: 100px;
+  border-radius: 50%;
+  align-items: center;
+}
+.label{
+  text-align: left;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: #515b66;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
