@@ -5,7 +5,7 @@ import Signup from './pages/Signup';
 import Home from './pages/Home';
 import { useState } from 'react';
 import RefrshHandler from './RefrshHandler';
-import BrainSimulationPage from './pages/BrainSimulationPage'; 
+import CardiacMRI from './pages/CardiacMRI';
 
 
 function App() {
@@ -23,7 +23,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/home' element={<PrivateRoute element={<Home />} />} />
-        <Route path='/simulation/brain' element={<BrainSimulationPage />} />
+        <Route path='/cardiac-mri' element={<PrivateRoute element={<CardiacMRI />} />} />
+
 
       </Routes>
     </div>

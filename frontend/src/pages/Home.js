@@ -28,8 +28,17 @@ function Home() {
   };
 
   const startSimulation = (anatomy) => {
-    alert(`Starting MRI simulation for the ${anatomy}`);
     
+    // alert(`Starting MRI simulation for the ${anatomy}`⁠);
+
+    switch (anatomy) {
+      case "cardiac":
+        navigate('/cardiac-mri');
+        break;
+    
+      default:
+        break;
+    }
   };
 
   return (
